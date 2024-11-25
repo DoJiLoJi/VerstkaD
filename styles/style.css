@@ -1,0 +1,291 @@
+:root {
+  --background: #131313;
+  --white: #f5f5f5;
+  --text-gray: #cccccc;
+  --yellow: #fee42a;
+  --black: #000000;
+  --gray: #343434;
+}
+@font-face {
+  font-family: "Ebgarmond400";
+  src: url("../fonts/ebgaramondregular.ttf");
+  src: url("../fonts/ebgaramondregular.woff");
+  src: url("../fonts/ebgaramondregular.woff2");
+  font-weight: 400px;
+}
+
+@font-face {
+  font-family: "Ebgarmond500";
+  src: url("../fonts/ebgaramondmedium.ttf");
+  src: url("../fonts/ebgaramondmedium.woff");
+  src: url("../fonts/ebgaramondmedium.woff2");
+  font-weight: 500px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/ebgaramondregular.ttf");
+  src: url("../fonts/ebgaramondregular.woff");
+  src: url("/fonts/ebgaramondregular.woff2");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/interregular.ttf");
+  src: url("../fonts/interregular.woff");
+  src: url("../fonts/interregular.woff2");
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Interbold";
+  src: url("../fonts/interbold.ttf");
+  src: url("../fonts/interbold.woff");
+  src: url("../fonts/interbold.woff2");
+  font-weight: 700px;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background);
+  color: white;
+
+  width: 360px;
+
+  margin: 0 auto;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+}
+
+/* Header*/
+
+
+.header {
+  padding: 24px 20px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.header__menu-link {
+  display: flex;
+  align-items: end;
+}
+
+.header {
+  padding: 24px 20px;
+}
+
+.header__logo-image {
+  width: 78.45px;
+  height: 15.43px;
+}
+
+.header__menu-item:nth-of-type(2) {
+  padding: 12px 0;
+}
+.header__menu-item_active {
+  text-decoration: underline;
+}
+
+/* COVERS*/
+.cover {
+  margin-left: 20px;
+  background-image: url("../images/cover.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-gray);
+  font-size: 72px;
+  font-weight: 200;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/*Intro*/
+.intro {
+  margin: 0 20px;
+  font-size: 15px;
+}
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-gray);
+}
+
+.intro__main-text {
+  margin: 24px 0;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.intro__main-text-1 {
+  font-size: 16px;
+  font-family: "Inter";
+  word-spacing: 10px;
+  margin: 24px 0;
+}
+
+.intro__title {
+  font-family: "Inter";
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.intro__date {
+  font-family: "Inter";
+}
+
+/* SECTION */
+.section {
+  padding: 0 20px;
+}
+.section_theme-yellow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+.section_theme-black {
+  background-color: var(--background);
+  color: var(--white);
+}
+.content-section__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ebgarmond500";
+  font-size: 28px;
+  font-weight: 500;
+  padding-top: 40px;
+  margin: 0;
+  line-height: 115%;
+}
+.content-section__introduction {
+  font-family: "inter";
+  font-size: 20px;
+  margin: 32px 0;
+  line-height: 27px;
+}
+
+.content-section__list {
+  padding: 20px;
+}
+
+.content-section__list-accent {
+  font-weight: bold;
+}
+.content-section__list-item {
+  font-family: "inter";
+  line-height: 21.6px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: mixed;
+  width: 304px;
+}
+
+.content-section__list {
+  padding: 20px;
+}
+
+/* Карточки */
+.card {
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+.card_theme-dark {
+  background-color: var(--gray);
+  color: var(--white);
+}
+.card_theme-bright {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+.card__author {
+  display: flex;
+  flex-direction: column;
+}
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+}
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 32px;
+}
+
+.card__author-name {
+  font-weight: bold;
+  font-family: "inter";
+  font-size: 16px;
+
+  margin-top: 8px;
+}
+
+.card__text {
+  font-family: "inter";
+  font-size: 16px;
+  line-height: 21.6px;
+  margin-top: 8px;
+}
+
+.card__title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: "Ebgarmond500";
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card__content {
+  margin: 8px 0;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--yellow);
+  padding: 20px;
+}
+
+.footer-copy {
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.footer__links {
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.footer__link {
+  margin-right: 16px;
+}
